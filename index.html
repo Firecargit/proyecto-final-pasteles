@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Mi Dulce Secreto | Tortas, cumpleaños, fiestas, Dulce Secreto, Eventos, pasteles, celebraciones, Machala
+  </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/Logotipo_repostería.png" alt="Logo de la Empresa" class="logo">
+    </a>
+    <h1>Mi Dulce Secreto</h1>
+    <h2>Deliciosas Tortas de Cumpleaños</h2>
+    <h3>Un Pedacito de Cielo Hecho Pastel</h3>
+  </header>
+
+  <nav>
+    <a class="active" href="index.html">Home</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="sobreNosotros.html">Sobre Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </div>
+
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close">&times;</span>
+      <h2>Tu Carrito de Compras</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+      <div class="cart-actions">
+        <button class="clear-cart">Borrar Pedido</button>
+        <button class="order-cart">Hacer Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="product">
+      <div class="carousel">
+        <img src="img/play_station.png" alt="Torta de Cumpleaños 1" class="carousel-image active">
+        <img src="img/cars.png" alt="Torta de Cumpleaños 2" class="carousel-image active">
+        <img src="img/minirosa.png" alt="Torta de Cumpleaños 3" class="carousel-image active">
+        <img src="img/haloween1.png" alt="Torta de Cumpleaños 4" class="carousel-image active">
+        <img src="img/el_chavo.png" alt="Torta de Cumpleaños 5" class="carousel-image active">
+        <img src="img/haloween2.png" alt="Torta de Cumpleaños 6" class="carousel-image active">
+        <img src="img/barcelona.png" alt="Torta de Cumpleaños 7" class="carousel-image active">
+        <button class="carousel-button prev">&lt;</button>
+        <button class="carousel-button next">&gt;</button>
+      </div>
+    </div>
+
+
+    <a href="catalogo.html">
+      <h2>Nuestro Catálogo</h2>
+    </a>
+    <div class="catalog">
+      <div class="catalog-item">
+        <img src="img/kitti.png" alt="Torta temática para ocaciones especiales" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Hello Kitty</h4>
+          <p>Torta decorada con diseño elegante, Rellena de deliciosa frutilla y crema.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$55.99 (G)</div>
+            <div class="price-option" data-price="50.00">$50.00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/barcelona.png" alt="Torta decorada con crema " width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Equipo De Futbol</h4>
+          <p>Delicada torta tres leches vainilla.</p>
+          <br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50.00">$50.00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/corbatin.png" alt="Torta con llamativo color y delicioso relleno de manjar " width="400"
+          height="500">
+        <div class="catalog-item-info">
+          <h4>Torta para el caballero</h4>
+          <p>Torta decorada de bigote y corbatin.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50.00">$50.00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/spiderman.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Super Heroes</h4>
+          <p>Colorida torta de spiderman personalizada con tu héroe favorito.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="testimonials">
+      <h2>Opiniones de nuestros clientes</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial">
+          <p>"¡La torta de unicornio que pedí para el cumpleaños de mi hija fue espectacular! Todos los niños
+            quedaron
+            encantados."</p>
+          <p class="testimonial-author">- María Gonzales.</p>
+        </div>
+        <div class="testimonial">
+          <p>"El sabor de la torta de chocolate fue increíble. Definitivamente volveré a pedir para futuras
+            celebraciones."</p>
+          <p class="testimonial-author">- Carlos Ramirez.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La atención al cliente es excelente y la calidad de los productos supera las expectativas. ¡Totalmente
+            recomendado!"</p>
+          <p class="testimonial-author">- Laura Mendoza.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La torta tres leches que pedí para el cumpleaños de mi hijo fue una delicia. Todos quedaron
+            encantados."
+          </p>
+          <p class="testimonial-author">- Camila Rivas.</p>
+        </div>
+        <div class="testimonial">
+          <p>"¡La decoración de la torta fue espectacular! Y el sabor a vainilla con relleno de frutilla fue el
+            complemento perfecto."</p>
+          <p class="testimonial-author">- Andrés Gómez.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La torta de chocolate con relleno de manjar y nueces fue el éxito de la fiesta. No quedó ni una
+            migaja."
+          </p>
+          <p class="testimonial-author">- Valentina Pérez</p>
+        </div>
+        <div class="testimonial">
+          <p>"El diseño personalizado de la torta de autos y el sabor a tres leches superaron nuestras expectativas.
+            ¡Deliciosa!"</p>
+          <p class="testimonial-author">-Diego Martínez.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La combinación de vainilla y chispas de chocolate fue todo un acierto. Definitivamente la mejor torta
+            que
+            hemos probado."</p>
+          <p class="testimonial-author">- Sofía Herrera.</p>
+        </div>
+        <div class="testimonial">
+          <p>"El relleno de manjar y frutilla en la torta de cumpleaños fue un sueño. Todos los invitados querían
+            repetir."</p>
+          <p class="testimonial-author">- Mateo Ramírez.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La torta de chocolate con decoración temática fue perfecta para el cumpleaños de mi hija. ¡Y sabía aún
+            mejor de lo que se veía!"</p>
+          <p class="testimonial-author">- Mariana Torres.</p>
+        </div>
+        <div class="testimonial">
+          <p>"El sabor a tres leches y la suavidad de la torta hicieron que todos los invitados quedaran
+            sorprendidos.
+            ¡La recomiendo!"</p>
+          <p class="testimonial-author">-Sebastián Morales.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Pedimos una torta de vainilla con relleno de chispas de chocolate, y fue la mejor elección. El
+            equilibrio
+            perfecto entre sabor y dulzura."</p>
+          <p class="testimonial-author">-Daniela Fernández.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La torta de autos para el cumpleaños de mi hijo no solo fue hermosa, sino que el sabor a chocolate con
+            nueces fue exquisito."</p>
+          <p class="testimonial-author">- Javier Sánchez.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Nunca había probado una torta tan esponjosa como la de tres leches que encargamos. Definitivamente
+            pediremos otra para la próxima fiesta."</p>
+          <p class="testimonial-author">- Lucía Castillo.</p>
+        </div>
+        <div class="testimonial">
+          <p>"El relleno de manjar y frutillas le dio un toque especial a la torta de vainilla. Todos los niños
+            quedaron
+            encantados."</p>
+          <p class="testimonial-author">-Alejandro Ortiz.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La torta de cumpleaños temática de autos fue un éxito total. El sabor a chocolate con relleno de
+            nueces
+            fue delicioso."</p>
+          <p class="testimonial-author">- Gabriela Romero.</p>
+        </div>
+        <div class="testimonial">
+          <p>"¡La torta de tres leches con decoración personalizada fue un hit! Sabor y presentación, todo
+            perfecto."
+          </p>
+          <p class="testimonial-author">- Carlos Navarro.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Me sorprendió lo suave y deliciosa que era la torta de vainilla con chispas de chocolate. Sin duda, la
+            mejor elección para la fiesta."</p>
+          <p class="testimonial-author">- Isabel Rivas.</p>
+        </div>
+        <div class="testimonial">
+          <p>"El sabor de la torta de chocolate rellena de manjar y frutillas fue absolutamente delicioso. ¡La
+            amamos!"
+          </p>
+          <p class="testimonial-author">-Nicolás Aguirre.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La combinación de tres leches y relleno de chispas de chocolate fue todo un éxito en el cumpleaños de
+            mi
+            hija. ¡Gracias por la perfección!"</p>
+          <p class="testimonial-author">- Paula Delgado.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Nunca había probado una torta tan rica como la de vainilla con relleno de nueces. Fue el centro de
+            atención en la fiesta."</p>
+          <p class="testimonial-author">- Tomás Vargas.</p>
+        </div>
+        <div class="testimonial">
+          <p>"La torta temática de autos y el relleno de manjar con frutilla fueron simplemente increíbles. Todos
+            quedaron impresionados."</p>
+          <p class="testimonial-author">- Laura Espinosa.</p>
+        </div>
+        <div class="testimonial">
+          <p>"El diseño de la torta fue impresionante y el sabor a chocolate con relleno de chispas fue un placer
+            para
+            el paladar."</p>
+          <p class="testimonial-author">- Martín Méndez</p>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button id="prevTestimonial">&lt;</button>
+        <button id="nextTestimonial">&gt;</button>
+      </div>
+    </section>
+    <div id = "contacto">
+      <section class="contact-form">
+        <h2>Contáctanos</h2>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <div class="container">
+          <form target="_blank" action="https://formsubmit.co/contac.midulcesecreto@gmail.com" method="POST">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                  <input type="email" name="email" class="form-control" placeholder="Dirección de Correo" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Su mensaje aqui" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">ENVIAR</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="social-media">
+      <a href="https://wa.me/+5930994016605?text=${encodedMessage}" window.open(whatsappLink, target="_blank" )><i
+          class="fab fa-whatsapp"></i> WhatsApp</a>
+
+      <a href="https://www.tiktok.com/@dianasoledadjimen?_t=8pRaG9K0Nle&_r=1" target="_blank"><i
+          class="fab fa-tiktok"></i> tiktok</a>
+
+      <a href="https://www.instagram.com/dianajimenezc18?igsh=MTJjbmR0d2w2NDIzeg==" target="_blank"><i
+          class="fab fa-instagram"></i> Instagram</a>
+    </div>
+    <p>&copy; 2023 Mi Dulce Secreto. Todos los derechos reservados.</p>
+    <p><a href="Politica de Privacidad.html">Política de Privacidad</a> | <a href="terminos y condiciones.html">Términos
+        de Servicio</a></p>
+    <button id="backToTop" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+  </footer>
+
+  <script>
+    // Variables globales
+    let cartCount = 0;
+    let cartItems = [];
+    let cartTotal = 0;
+
+    // Funciones de localStorage
+    function loadCartFromLocalStorage() {
+      const savedCart = localStorage.getItem('cartItems');
+      if (savedCart) {
+        cartItems = JSON.parse(savedCart);
+        cartCount = cartItems.length;
+        updateCartCount();
+        updateCartTotal();
+      }
+    }
+
+    function saveCartToLocalStorage() {
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }
+
+    // Funciones del carrito
+    function updateCartCount() {
+      document.querySelector('.cart-count').textContent = cartCount;
+    }
+
+    function updateCartTotal() {
+      cartTotal = cartItems.reduce((total, item) => total + parseFloat(item.price), 0);
+      document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+    }
+
+    function updateCartModal() {
+      const cartItemsContainer = document.getElementById('cartItems');
+      cartItemsContainer.innerHTML = '';
+
+      cartItems.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `<span>${item.name} - $${item.price} (${item.size})</span>
+      <button onclick="removeFromCart(${index})">Eliminar</button>`;
+        cartItemsContainer.appendChild(cartItem);
+      });
+
+      updateCartTotal();
+    }
+
+    function addToCart(productName, productPrice, productSize) {
+      cartCount++;
+      updateCartCount();
+
+      cartItems.push({ name: productName, price: productPrice, size: productSize });
+      updateCartModal();
+      saveCartToLocalStorage();
+
+      console.log(`Añadido al carrito: ${productName} - $${productPrice} (${productSize})`);
+    }
+
+    function removeFromCart(index) {
+      cartItems.splice(index, 1);
+      cartCount--;
+      updateCartCount();
+      updateCartModal();
+      saveCartToLocalStorage();
+    }
+
+    // Eventos
+    document.querySelectorAll('.price-options').forEach(options => {
+      options.querySelectorAll('.price-option').forEach(option => {
+        option.addEventListener('click', function () {
+          if (this.classList.contains('selected')) {
+            this.classList.remove('selected');
+          } else {
+            options.querySelectorAll('.price-option').forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+          }
+        });
+      });
+    });
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+        const productInfo = this.closest('.product-info, .catalog-item-info');
+        const productName = productInfo.querySelector('h3, h4').textContent;
+        const selectedPrice = productInfo.querySelector('.price-option.selected');
+
+        if (!selectedPrice) {
+          alert('Por favor, selecciona el precio según el tamaño antes de añadir al carrito.');
+          return;
+        }
+
+        const productPrice = selectedPrice.dataset.price;
+        const productSize = selectedPrice.textContent.split('(')[1].replace(')', '');
+
+        addToCart(productName, productPrice, productSize);
+      });
+    });
+
+    const modal = document.getElementById("cartModal");
+    const cartIcon = document.querySelector('.cart-icon');
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    cartIcon.onclick = function () {
+      modal.style.display = "block";
+      updateCartModal();
+    }
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    document.querySelector('.clear-cart').addEventListener('click', function () {
+      cartItems = [];
+      cartCount = 0;
+      updateCartCount();
+      updateCartModal();
+      saveCartToLocalStorage();
+    });
+
+    document.querySelector('.order-cart').addEventListener('click', function () {
+      if (cartItems.length === 0) {
+        alert("Tu carrito está vacío. Agrega algunos productos primero.");
+        return;
+      }
+
+      let message = "Hola! Me gustaría hacer un pedido:\n\n";
+      cartItems.forEach((item, index) => {
+        message += `${index + 1}. ${item.name} - $${item.price} - (${item.size})\n`;
+      });
+      message += `\nTotal: $${cartTotal.toFixed(2)}`;
+      message += "\n\nPor favor, podrías confirmarme los detalles para el pago?";
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappLink = `https://wa.me/+5930994016605?text=${encodedMessage}`;
+
+      window.open(whatsappLink, '_blank');
+    });
+
+    // Cargar el carrito desde localStorage al iniciar la página
+    document.addEventListener('DOMContentLoaded', loadCartFromLocalStorage);
+
+    // Carousel functionality
+    const carousel = document.querySelector('.carousel');
+    const carouselImages = carousel.querySelectorAll('.carousel-image');
+    const prevButton = carousel.querySelector('.prev');
+    const nextButton = carousel.querySelector('.next');
+    let currentImageIndex = 0;
+
+    function showImage(index) {
+      carouselImages.forEach(img => img.classList.remove('active'));
+      carouselImages[index].classList.add('active');
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+      showImage(currentImageIndex);
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + carouselImages.length) % carouselImages.length;
+      showImage(currentImageIndex);
+    }
+
+    nextButton.addEventListener('click', nextImage);
+    prevButton.addEventListener('click', prevImage);
+
+    // Auto-rotate carousel every 5 seconds
+    setInterval(nextImage, 5000);
+
+
+    // Testimonial Carousel
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    const prevTestimonialButton = document.getElementById('prevTestimonial');
+    const nextTestimonialButton = document.getElementById('nextTestimonial');
+
+    function showTestimonial(index) {
+      testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+      testimonials[index].classList.add('active');
+    }
+
+    function nextTestimonial() {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    function prevTestimonial() {
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    prevButton.addEventListener('click', prevTestimonial);
+    nextButton.addEventListener('click', nextTestimonial);
+
+    // Show the first testimonial initially
+    showTestimonial(currentTestimonial);
+
+    // Auto-rotate testimonials every 5 seconds
+    setInterval(nextTestimonial, 5000);
+    prevTestimonialButton.addEventListener('click', prevTestimonial);
+    nextTestimonialButton.addEventListener('click', nextTestimonial);
+
+    // Show the first testimonial initially
+    showTestimonial(currentTestimonial);
+
+    // Auto-rotate testimonials every 5 seconds
+    setInterval(nextTestimonial, 5000);
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    }
+
+    backToTopButton.onclick = function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+
+</html>

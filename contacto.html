@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Mi Dulce Secreto | Tortas, cumpleaños, fiestas, Dulce Secreto, Eventos, pasteles, celebraciones, Machala
+  </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/Logotipo_repostería.png" alt="Logo de la Empresa" class="logo">
+    </a>
+    <h1>Mi Dulce Secreto</h1>
+    <h2>Deliciosas Tortas de Cumpleaños</h2>
+    <h3>Un Pedacito de Cielo Hecho Pastel</h3>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="sobreNosotros.html">Sobre Nosotros</a>
+    <a class="active" href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </div>
+
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close">&times;</span>
+      <h2>Tu Carrito de Compras</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+      <div class="cart-actions">
+        <button class="clear-cart">Borrar Pedido</button>
+        <button class="order-cart">Hacer Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div id="contacto">
+
+      <div class="contact-info">
+        <h2>Información de Contacto</h2>
+        <p> <i class="fas fa-map-marker-alt" title="dirección"></i>
+          <a href="https://maps.app.goo.gl/Dbw2yknps7uAxqXAA" target="_blank"> Palmeras y Héctor Chica Callejón 4ta
+            Norte</a>
+        </p>
+        <p><i class="fas fa-phone" title="teléfono"></i> <a href="Tel: 0994016605"> 0994016605</a></p>
+        <p><i class="fas fa-envelope" title="email"></i> <a href="mailto:contac.midulcesecreto@gmail.com">
+            contac.midulcesecreto@gmail.com</a></p>
+        <p><i class="fas fa-clock" title="horario"></i> Horario: Lunes a Sábado, 9:00 AM - 7:00 PM</p>
+      </div>
+
+      <section class="contact-form">
+        <h2>Contáctanos</h2>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <div class="container">
+          <form target="_blank" action="https://formsubmit.co/contac.midulcesecreto@gmail.com" method="POST">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                  <input type="email" name="email" class="form-control" placeholder="Dirección de Correo" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Su mensaje aqui" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">ENVIAR</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- Mapa de Google -->
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.346744034601!2d-79.96917359999999!3d-3.2638097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90330f712ca7cc4d%3A0x739ba8169c0eabf7!2sMi%20Dulce%20Secreto!5e0!3m2!1ses!2sec!4v1726709815386!5m2!1ses!2sec"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <div class="social-media">
+      <a href="https://wa.me/+5930994016605?text=${encodedMessage}" window.open(whatsappLink, target="_blank" )><i
+          class="fab fa-whatsapp"></i> WhatsApp</a>
+
+      <a href="https://www.tiktok.com/@dianasoledadjimen?_t=8pRaG9K0Nle&_r=1" target="_blank"><i
+          class="fab fa-tiktok"></i> tiktok</a>
+
+      <a href="https://www.instagram.com/dianajimenezc18?igsh=MTJjbmR0d2w2NDIzeg==" target="_blank"><i
+          class="fab fa-instagram"></i> Instagram</a>
+    </div>
+    <p>&copy; 2023 Mi Dulce Secreto. Todos los derechos reservados.</p>
+    <p><a href="Politica de Privacidad.html">Política de Privacidad</a> | <a href="terminos y condiciones.html">Términos
+        de Servicio</a></p>
+    <button id="backToTop" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+  </footer>
+
+  <script>
+    // Variables globales
+    let cartCount = 0;
+    let cartItems = [];
+    let cartTotal = 0;
+
+    // Funciones de localStorage
+    function loadCartFromLocalStorage() {
+      const savedCart = localStorage.getItem('cartItems');
+      if (savedCart) {
+        cartItems = JSON.parse(savedCart);
+        cartCount = cartItems.length;
+        updateCartCount();
+        updateCartTotal();
+      }
+    }
+
+    function saveCartToLocalStorage() {
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }
+
+    // Funciones del carrito
+    function updateCartCount() {
+      document.querySelector('.cart-count').textContent = cartCount;
+    }
+
+    function updateCartTotal() {
+      cartTotal = cartItems.reduce((total, item) => total + parseFloat(item.price), 0);
+      document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+    }
+
+    function updateCartModal() {
+      const cartItemsContainer = document.getElementById('cartItems');
+      cartItemsContainer.innerHTML = '';
+
+      cartItems.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `<span>${item.name} - $${item.price} (${item.size})</span>
+      <button onclick="removeFromCart(${index})">Eliminar</button>`;
+        cartItemsContainer.appendChild(cartItem);
+      });
+
+      updateCartTotal();
+    }
+
+    function addToCart(productName, productPrice, productSize) {
+      cartCount++;
+      updateCartCount();
+
+      cartItems.push({ name: productName, price: productPrice, size: productSize });
+      updateCartModal();
+      saveCartToLocalStorage();
+
+      console.log(`Añadido al carrito: ${productName} - $${productPrice} (${productSize})`);
+    }
+
+    function removeFromCart(index) {
+      cartItems.splice(index, 1);
+      cartCount--;
+      updateCartCount();
+      updateCartModal();
+      saveCartToLocalStorage();
+    }
+
+    // Eventos
+    document.querySelectorAll('.price-options').forEach(options => {
+      options.querySelectorAll('.price-option').forEach(option => {
+        option.addEventListener('click', function () {
+          if (this.classList.contains('selected')) {
+            this.classList.remove('selected');
+          } else {
+            options.querySelectorAll('.price-option').forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+          }
+        });
+      });
+    });
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+        const productInfo = this.closest('.product-info, .catalog-item-info');
+        const productName = productInfo.querySelector('h3, h4').textContent;
+        const selectedPrice = productInfo.querySelector('.price-option.selected');
+
+        if (!selectedPrice) {
+          alert('Por favor, selecciona el precio según el tamaño antes de añadir al carrito.');
+          return;
+        }
+
+        const productPrice = selectedPrice.dataset.price;
+        const productSize = selectedPrice.textContent.split('(')[1].replace(')', '');
+
+        addToCart(productName, productPrice, productSize);
+      });
+    });
+
+    const modal = document.getElementById("cartModal");
+    const cartIcon = document.querySelector('.cart-icon');
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    cartIcon.onclick = function () {
+      modal.style.display = "block";
+      updateCartModal();
+    }
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    document.querySelector('.clear-cart').addEventListener('click', function () {
+      cartItems = [];
+      cartCount = 0;
+      updateCartCount();
+      updateCartModal();
+      saveCartToLocalStorage();
+    });
+
+    document.querySelector('.order-cart').addEventListener('click', function () {
+      if (cartItems.length === 0) {
+        alert("Tu carrito está vacío. Agrega algunos productos primero.");
+        return;
+      }
+
+      let message = "Hola! Me gustaría hacer un pedido:\n\n";
+      cartItems.forEach((item, index) => {
+        message += `${index + 1}. ${item.name} - $${item.price} - (${item.size})\n`;
+      });
+      message += `\nTotal: $${cartTotal.toFixed(2)}`;
+      message += "\n\nPor favor, podrías confirmarme los detalles para el pago?";
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappLink = `https://wa.me/+5930994016605?text=${encodedMessage}`;
+
+      window.open(whatsappLink, '_blank');
+    });
+
+    // Cargar el carrito desde localStorage al iniciar la página
+    document.addEventListener('DOMContentLoaded', loadCartFromLocalStorage);
+
+    // Make contact icons interactive
+    document.querySelectorAll('.contact-info i').forEach(icon => {
+      icon.addEventListener('click', function () {
+        const action = this.getAttribute('title').toLowerCase();
+        switch (action) {
+          case 'dirección':
+            window.open('https://maps.app.goo.gl/Dbw2yknps7uAxqXAA', '_blank');
+            break;
+          case 'teléfono':
+            window.location.href = 'tel:0994016605';
+            break;
+          case 'email':
+            window.location.href = 'mailto:contac.midulcesecreto@gmail.com';
+            break;
+          case 'horario':
+            alert('Nuestro horario de atención es:\nLunes a Sábado, 9:00 AM - 7:00 PM');
+            break;
+
+            // Back to Top Button
+            const backToTopButton = document.getElementById("backToTop");
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+              } else {
+                backToTopButton.style.display = "none";
+              }
+            }
+
+            backToTopButton.onclick = function () {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

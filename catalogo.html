@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Mi Dulce Secreto | Tortas, cumpleaños, fiestas, Dulce Secreto, Eventos, pasteles, celebraciones, Machala
+  </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/Logotipo_repostería.png" alt="Logo de la Empresa" class="logo">
+    </a>
+    <h1>Mi Dulce Secreto</h1>
+    <h2>Deliciosas Tortas de Cumpleaños<br></h2>
+    <h3>Un Pedacito de Cielo Hecho Pastel</h3>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="catalogo.html">Catálogo</a>
+    <a href="sobreNosotros.html">Sobre Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </div>
+
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close">&times;</span>
+      <h2>Tu Carrito de Compras</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+      <div class="cart-actions">
+        <button class="clear-cart">Borrar Pedido</button>
+        <button class="order-cart">Hacer Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <h2 class="catalog">CATÁLOGO</h2>
+
+    <div class="catalog">
+      <div class="catalog-item">
+        <img src="img/barbie.png" alt="Torta temática para ocaciones especiales" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Temática Barbie</h4>
+          <p>Torta decorada con diseño elegante, Rellena de deliciosa frutilla y crema.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$55.99 (G)</div>
+            <div class="price-option" data-price="50.00">$50.00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/barcelona.png" alt="Torta decorada con crema " width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Equipo De Futbol</h4>
+          <p>Delicada torta tres leches vainilla.</p>
+          <br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50.00">$50.00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/cars.png" alt="Torta con llamativo color y delicioso relleno de manjar " width="400" height="500">
+        <div class="catalog-item-info">
+          <h4>Torta Pelis Cars</h4>
+          <p>Mágica torta del personaje de cars para los peques de la casa.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50.00">$50.00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/spiderman.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Super Heroes</h4>
+          <p>Colorida torta de spiderman personalizada con tu héroe favorito.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/corbatin.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta para el caballero</h4>
+          <p>Torta decorada de bigote y corbatin.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/el_chavo.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta El Chavo Animado</h4>
+          <p>Colorida torta del chavo y sus amigos.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/enojona.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta De Cumpleaños Clásica</h4>
+          <p>Rico relleno de manjar con chispas de chocolate.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/gaby.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta The Rugrats</h4>
+          <p>Torta con pequeños confites multicolores con el personaje Angelica Pickles.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/domenica.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Personaje Kuromi</h4>
+          <p>La torta tiene una base de color lila suave, con detalles en tonos grises.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/haloween1.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Temática Haloween</h4>
+          <p>Torta temática de haloween, delicioso relleno de manjar y nueces.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/torta_pirulin.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Pirulines</h4>
+          <p>Hermosa torta de pirulines y galletas oreos.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/flores.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Flores y Mariposas</h4>
+          <p>Elegante decoración con colores rosado y blanco.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/haloween2.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Haloween</h4>
+          <p>Halloween con una decoración espeluznante pero divertida, rellena de rico manjar de nueces y chocolate.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/princesas.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Princesas</h4>
+          <p>Bella torta de pircesas con sus colores rosado y turquesa con relleno de delicioso ganache .</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/maquillaje.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Tematca Belleza</h4>
+          <p>Torta tematica ideal para celebrar el dia de tu estilista de confianza.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/kitti.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Hello Kitty</h4>
+          <p>Relleno de un ganache de chocolate con leche con decorado rosa y confites dorados.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/mike.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Mickey Mouse</h4>
+          <p>Esta torta es una combinación perfecta de dulzura, color y diversión, ideal para una celebración especial..
+          </p><br><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/minirosa.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Minnie</h4>
+          <p>Una tierna y colorida torta de vainilla cubierta con un suave crema rosa
+            y rellena de una rica crema de manjar y chocolate.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/la_garnja.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta La Granja</h4>
+          <p>Esta encantadora torta es una verdadera celebración de la infancia y el amor por los animales.</p><br><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/lilo&stich.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Lilo y Stitch</h4>
+          <p>El dulce sabor del manjar se complementa a la perfección con la intensidad del chocolate,
+            creando un equilibrio perfecto entre lo dulce y lo amargo.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/marca_chanel.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Marca Chanel</h4>
+          <p>Perfecta para la ocasión de alguien que admira la marca Chanel en el mundo de la moda..</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/five nights.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Five Nights</h4>
+          <p>Los personajes animatrónicos y los detalles crean una atmósfera de terror y diversión al mismo tiempo.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/miniroja.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Minnie Mouse</h4>
+          <p>Alegre y divertida torta de Minnie, relleno de un ganache de chocolate con leche .</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/monstruo.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Monstruo</h4>
+          <p>Torta tematica personalizada, humeda en tres leches y vainilla.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/muñeca.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Infantil</h4>
+          <p> Tema de exploración espacial, llena de color y detalles divertidos que capturan la imaginación de una
+            joven aventurera.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/play_station.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Gamer</h4>
+          <p>Para los fanaticos de los video juegos, rellena de manjar con nueces.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/princes.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Princesas</h4>
+          <p>Colorida torta con relleno de manjar y chispas de chocolate.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/space jam.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Space Jam</h4>
+          <p>Colorida torta de tus personajes favoritos de space jam.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/animales kawaii.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Animales Kawaii</h4>
+          <p>Diseño inspirado en los personajes kawaii y delicioso relleno de chocolate.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/torta_rosa2.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Elegante</h4>
+          <p>Decoración elgente y cremoso con relleno humedo tres leches.</p><br>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/Up.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta pelis UP</h4>
+          <p>Los elementos de decoración, como las mariposas y los personajes de "Up", le dan un toque infantil y
+            divertido.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="img/amiga_especial.png" alt="Torta con capas de colores del arcoíris" width="400" height="400">
+        <div class="catalog-item-info">
+          <h4>Torta Tropical</h4>
+          <p>Los elementos decorativos y los colores utilizados evocan un ambiente de playa y verano.</p>
+          <div class="price-options">
+            <div class="price-option" data-price="10.00">$10.00 (P)</div>
+            <div class="price-option" data-price="20.00">$20.00 (M)</div>
+            <div class="price-option" data-price="30.00">$30.00 (G)</div>
+            <div class="price-option" data-price="50,00">$50,00 (EG)</div>
+          </div>
+          <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <a href="https://wa.me/+5930994016605?text=${encodedMessage}" window.open(whatsappLink, target="_blank" )><i
+        class="fab fa-whatsapp"></i> WhatsApp</a>
+
+    <a href="https://www.tiktok.com/@dianasoledadjimen?_t=8pRaG9K0Nle&_r=1" target="_blank"><i
+        class="fab fa-tiktok"></i> tiktok</a>
+
+    <a href="https://www.instagram.com/dianajimenezc18?igsh=MTJjbmR0d2w2NDIzeg==" target="_blank"><i
+        class="fab fa-instagram"></i> Instagram</a>
+
+    <p>&copy; 2023 Mi Dulce Secreto. Todos los derechos reservados.</p>
+    <p><a href="Politica de Privacidad.html">Política de Privacidad</a> | <a href="terminos y condiciones.html">Términos
+        de Servicio</a></p>
+    <button id="backToTop" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+  </footer>
+
+  <script>
+    // Variables globales
+    let cartCount = 0;
+    let cartItems = [];
+    let cartTotal = 0;
+
+    // Funciones de localStorage
+    function loadCartFromLocalStorage() {
+      const savedCart = localStorage.getItem('cartItems');
+      if (savedCart) {
+        cartItems = JSON.parse(savedCart);
+        cartCount = cartItems.length;
+        updateCartCount();
+        updateCartTotal();
+      }
+    }
+
+    function saveCartToLocalStorage() {
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }
+
+    // Funciones del carrito
+    function updateCartCount() {
+      document.querySelector('.cart-count').textContent = cartCount;
+    }
+
+    function updateCartTotal() {
+      cartTotal = cartItems.reduce((total, item) => total + parseFloat(item.price), 0);
+      document.getElementById('cartTotal').textContent = cartTotal.toFixed(2);
+    }
+
+    function updateCartModal() {
+      const cartItemsContainer = document.getElementById('cartItems');
+      cartItemsContainer.innerHTML = '';
+
+      cartItems.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `<span>${item.name} - $${item.price} (${item.size})</span>
+      <button onclick="removeFromCart(${index})">Eliminar</button>`;
+        cartItemsContainer.appendChild(cartItem);
+      });
+
+      updateCartTotal();
+    }
+
+    function addToCart(productName, productPrice, productSize) {
+      cartCount++;
+      updateCartCount();
+
+      cartItems.push({ name: productName, price: productPrice, size: productSize });
+      updateCartModal();
+      saveCartToLocalStorage();
+
+      console.log(`Añadido al carrito: ${productName} - $${productPrice} (${productSize})`);
+    }
+
+    function removeFromCart(index) {
+      cartItems.splice(index, 1);
+      cartCount--;
+      updateCartCount();
+      updateCartModal();
+      saveCartToLocalStorage();
+    }
+
+    // Eventos
+    document.querySelectorAll('.price-options').forEach(options => {
+      options.querySelectorAll('.price-option').forEach(option => {
+        option.addEventListener('click', function () {
+          if (this.classList.contains('selected')) {
+            this.classList.remove('selected');
+          } else {
+            options.querySelectorAll('.price-option').forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+          }
+        });
+      });
+    });
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+        const productInfo = this.closest('.product-info, .catalog-item-info');
+        const productName = productInfo.querySelector('h3, h4').textContent;
+        const selectedPrice = productInfo.querySelector('.price-option.selected');
+
+        if (!selectedPrice) {
+          alert('Por favor, selecciona el precio según el tamaño antes de añadir al carrito.');
+          return;
+        }
+
+        const productPrice = selectedPrice.dataset.price;
+        const productSize = selectedPrice.textContent.split('(')[1].replace(')', '');
+
+        addToCart(productName, productPrice, productSize);
+      });
+    });
+
+    const modal = document.getElementById("cartModal");
+    const cartIcon = document.querySelector('.cart-icon');
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    cartIcon.onclick = function () {
+      modal.style.display = "block";
+      updateCartModal();
+    }
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    document.querySelector('.clear-cart').addEventListener('click', function () {
+      cartItems = [];
+      cartCount = 0;
+      updateCartCount();
+      updateCartModal();
+      saveCartToLocalStorage();
+    });
+
+    document.querySelector('.order-cart').addEventListener('click', function () {
+      if (cartItems.length === 0) {
+        alert("Tu carrito está vacío. Agrega algunos productos primero.");
+        return;
+      }
+
+      let message = "Hola! Me gustaría hacer un pedido:\n\n";
+      cartItems.forEach((item, index) => {
+        message += `${index + 1}. ${item.name} - $${item.price} - (${item.size})\n`;
+      });
+      message += `\nTotal: $${cartTotal.toFixed(2)}`;
+      message += "\n\nPor favor, podrías confirmarme los detalles para el pago?";
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappLink = `https://wa.me/+5930994016605?text=${encodedMessage}`;
+
+      window.open(whatsappLink, '_blank');
+    });
+
+    // Cargar el carrito desde localStorage al iniciar la página
+    document.addEventListener('DOMContentLoaded', loadCartFromLocalStorage);
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    }
+
+    backToTopButton.onclick = function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+
+  </script>
+</body>
+
+</html>
